@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.social-background {
+    background-color: rgb(255, 165, 0);
+    width: 100%;
+}
+
+.social img {
+    width: 33px;
+}
+
+.titulo {
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #141414;
+    padding: 0 15px;
+    box-shadow: 0 0px 10px black;
+}
+
+.titulo h1 a {
+    color: rgb(255, 165, 0);
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(255, 165, 0);
+    padding: 0 10px;
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da página */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    position: relative; /* Adicionado para posicionamento correto do submenu */
+    
+}
+
+.menu li a {
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: block;
+    
+}
+
+.menu li:hover {
+    background-color: #141414;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ajuste para que o submenu apareça abaixo do item de menu pai */
+    left: 0;
+    background-color: #141414;
+    min-width: 100%;
+    
+    
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+
+
+}
+
+.submenu li .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.imagens-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remover o preenchimento do contêiner pai */
+}
+
+.imagens-lista ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.imagens-lista li {
+    margin: 0 5px; /* Ajustar a margem entre as imagens */
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.imagens-lista img {
+    width: 300px; 
+    height: 200px;
+    max-width: 100%; 
+    margin-top: 150px;
+}
